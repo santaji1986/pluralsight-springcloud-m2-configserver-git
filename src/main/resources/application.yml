@@ -1,0 +1,21 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rseroter/pluralsight-spring-cloudconfig-wa-tolls
+          #uri: https://github.com/santaji1986/pluralsight-springcloud-m2-configserver-git-config
+          #username: 
+          #password: 
+          search-paths:
+          - 'station*'
+          repos:
+            dev:
+             pattern:
+              - '*/perf'
+             uri: https://github.com/santaji1986/pluralsight-spring-cloudconfig-wa-tolls-perf
+             
+            
